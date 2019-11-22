@@ -1,0 +1,38 @@
+
+Clover EFI installer log - Fri Jun 22 12:39:36 CST 2018
+Installer version: v2.4k r4558 EFI bootloader
+======================================================
+/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         512.1 GB   disk0
+   1:                        EFI EFI                     103.8 MB   disk0s1
+   2:       Microsoft Basic Data Windows                 128.9 GB   disk0s2
+   3:       Microsoft Basic Data Files                   107.4 GB   disk0s3
+   4:                        EFI EFI                     314.6 MB   disk0s4
+   5:                 Apple_APFS Container disk1         275.5 GB   disk0s5
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +275.5 GB   disk1
+                                 Physical Store disk0s5
+   1:                APFS Volume MacOS                   65.3 GB    disk1s1
+   2:                APFS Volume Preboot                 20.7 MB    disk1s2
+   3:                APFS Volume Recovery                518.1 MB   disk1s3
+   4:                APFS Volume VM                      8.6 GB     disk1s4
+
+Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s5
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r/2018-06-22-12h39/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Theme 'BGM' (defined in config.plist) not found !
+Using default theme 'Material'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
