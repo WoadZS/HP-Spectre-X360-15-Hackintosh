@@ -3,6 +3,7 @@ EFI files for HP Spectre X360 15-bl112dx
 
 ## macOS版本 Version
 MacOS Mojave 10.14.6
+Clover Ver. 5098
 ## 配置 Specs
 |配置 Parts|参数 Details
 |:---:|:---:|
