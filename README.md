@@ -10,7 +10,7 @@ Clover Version v5103
 电脑型号 Computer Model | HP Spectre X360 15-bl112dx
 CPU | i7-8550U
 显卡 Graphics card | UHD620<br>~~NVIDIA MX150~~ 已禁用（Disabled）
-声卡 Audio | Realtek ALC295 (Injected ID:14)
+声卡 Audio | Realtek ALC295 (Injected ID:3)
 内建显示器 Display | 4K 触摸屏 Touch
 网卡蓝牙 WiFi | DW1560
 内存 RAM | 8G * 2
@@ -18,6 +18,9 @@ CPU | i7-8550U
 BIOS | v.40
 
 ## 更新历史 Changelog
+2020.2.3  
+1. 变更内存补丁为AptioMemoryFix.efi和EmuVariableUefi.efi以修复关机后自动重启的问题<br>Change Memory Fix EFI files to AptioMemoryFix and EmuVariableUefi to solve shutdown = reboot
+2. 变更声卡注入ID为3<br>Change Audio Injected ID to 3 from 14  
 2020.1.21
 1. 变更FakeSMC为VirtualSMC，并修改配套Kexts<br>Change FakeSMC to VirtualSMC, as well as relative kexts and efi
 2. 成功驱动触摸屏<br>Touch Screen available now
