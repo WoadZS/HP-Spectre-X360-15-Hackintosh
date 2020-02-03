@@ -2,7 +2,7 @@
 EFI files for HP Spectre X360 15-bl112dx
 
 ## macOS版本 Version
-MacOS Catalina 10.15.2  
+MacOS Catalina 10.15.3  
 Clover Version v5103
 ## 配置 Specs
 |配置 Parts|参数 Details
@@ -20,7 +20,9 @@ BIOS | v.40
 ## 更新历史 Changelog
 ### 2020.2.3  
 1. 变更内存补丁为AptioMemoryFix.efi和EmuVariableUefi.efi以修复关机后自动重启的问题<br>Change Memory Fix EFI files to AptioMemoryFix and EmuVariableUefi to solve shutdown = reboot
-2. 变更声卡注入ID为3<br>Change Audio Injected ID to 3 from 14  
+2. 变更声卡注入ID为3<br>Change Audio Injected ID to 3 from 14
+3. 升级系统至MacOS Catalina 10.15.3<br>Upgrade MacOS version to acOS Catalina 10.15.3
+
 ### 2020.1.21
 1. 变更FakeSMC为VirtualSMC，并修改配套Kexts<br>Change FakeSMC to VirtualSMC, as well as relative kexts and efi
 2. 成功驱动触摸屏<br>Touch Screen available now
