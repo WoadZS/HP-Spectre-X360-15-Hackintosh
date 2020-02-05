@@ -18,6 +18,9 @@ CPU | i7-8550U
 BIOS | v.40
 
 ## 更新历史 Changelog
+### 2020.2.5  
+1. 禁用触摸屏，因为更新MacOS系统后触摸屏和触摸板有冲突，触屏会取代触摸板工作，而ApplePS2SmartTouchPad并不能提供良好的防误触功能<br>Disabled TouchScreen cause only Touchscreen can working after upgrading macOS, you can still use ApplePS2SmartTouchPad to activte touchpad but with loss of many functions.
+2. 再次修正DSDT，解决关机重启问题<br>Fix DSDT to solve reboot after shotdown
 ### 2020.2.3  
 1. 变更内存补丁为AptioMemoryFix.efi和EmuVariableUefi.efi以修复关机后自动重启的问题<br>Change Memory Fix EFI files to AptioMemoryFix and EmuVariableUefi to solve shutdown = reboot
 2. 变更声卡注入ID为3<br>Change Audio Injected ID to 3 from 14
@@ -41,7 +44,7 @@ BIOS | v.40
 * 触摸板 Trackpad  
 * 声卡 Audio  
 * 睡眠 Sleep 
-* 触摸屏 Touch Screen
+* ~~触摸屏 Touch Screen~~ 将VoodooI2CHID.kext放到LE里面就能启用，但会导致触摸板失效<br>You can put VoodooI2CHID.kext back in to LE to enable that, but you will lose touchpad
 
 ## 已知无法正常工作的部件和问题 Known Issues
 * Type-C 转 HDMI 输出会导致重启（HDMI接口可正常输出）<br>Type-c external display will cause reboot(HDMI Port works well)
