@@ -18,6 +18,10 @@ CPU | i7-8550U
 BIOS | v.40
 
 ## 更新历史 Changelog
+### 2020.2.9  
+1. 打上IRQ补丁已解决部分音频问题<br>Apply IRQ Fix in DSDT to fix some minor audio issues.
+2. 取消`-v`模式并缩短Clover等待时间<br>Cancel `-v` mode and reduce the wait time before OS booting.  
+3. 更新AirportBrcmFixup.kext并删除不使用的kext<br>Update AirportBrcmFixup.kext and delete useless kexts.  
 ### 2020.2.5  
 1. 禁用触摸屏，因为更新MacOS系统后触摸屏和触摸板有冲突，触屏会取代触摸板工作，而ApplePS2SmartTouchPad并不能提供良好的防误触功能<br>Disabled TouchScreen cause only Touchscreen can working after upgrading macOS, you can still use ApplePS2SmartTouchPad to activte touchpad but with loss of many functions.
 2. 再次修正DSDT，解决关机重启问题<br>Fix DSDT to solve reboot after shotdown
@@ -45,11 +49,11 @@ BIOS | v.40
 * 声卡 Audio  
 * 睡眠 Sleep 
 * ~~触摸屏 Touch Screen~~ 将VoodooI2CHID.kext放到LE里面就能启用，但会导致触摸板失效<br>You can put VoodooI2CHID.kext back in to LE to enable that, but you will lose touchpad
+* FN 小太阳亮度调整<br>FN key support brightness adjust.
 
 ## 已知无法正常工作的部件和问题 Known Issues
 * Type-C 转 HDMI 输出会导致重启（HDMI接口可正常输出）<br>Type-c external display will cause reboot(HDMI Port works well)
 * 蓝牙 无法确认是否是卡坏了<br>Bluetooth, not sure the card is fully fuctional.
-* FN小太阳亮度调整（设置可以调整）<br>FN key cannot adjust brightness(You can adjust that in system setting)
 * 有一个Type-C接口只能充电无法进行数据传输<br>One of the Type-C Port can only be used for charging, instead of data transfering;
 * 雷电3 无法工作<br>Thunderbolt 3 is not working
 * 读卡器 无法工作<br>SDcard reader is not working
