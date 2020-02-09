@@ -19,7 +19,7 @@ BIOS | v.40
 
 ## 更新历史 Changelog
 ### 2020.2.9  
-1. 打上IRQ补丁已解决部分音频问题<br>Apply IRQ Fix in DSDT to fix some minor audio issues.
+1. 打上IRQ补丁以解决部分音频问题<br>Apply IRQ Fix in DSDT to fix some minor audio issues.
 2. 取消`-v`模式并缩短Clover等待时间<br>Cancel `-v` mode and reduce the wait time before OS booting.  
 3. 更新AirportBrcmFixup.kext并删除不使用的kext<br>Update AirportBrcmFixup.kext and delete useless kexts.  
 ### 2020.2.5  
