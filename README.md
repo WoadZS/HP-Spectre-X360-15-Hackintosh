@@ -15,7 +15,7 @@ CPU | i7-8550U
 网卡蓝牙 WiFi | DW1560
 内存 RAM | 8G * 2
 硬盘 SSD | 海康威视 Hikvision C2000 Pro 512GB
-BIOS | v.40
+BIOS | v.41（v.40 Tested）
 
 ## 更新历史 Changelog
 ### 2020.2.9  
