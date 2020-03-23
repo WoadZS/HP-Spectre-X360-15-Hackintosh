@@ -3,7 +3,7 @@ EFI files for HP Spectre X360 15-bl112dx
 
 ## macOS版本 Version
 MacOS Catalina 10.15.3  
-Clover Version v5105
+Clover Version v5106
 ## 配置 Specs
 |配置 Parts|参数 Details
 |:---:|:---:|
@@ -18,6 +18,9 @@ CPU | i7-8550U
 BIOS | v.41（v.40 Tested）
 
 ## 更新历史 Changelog
+### 2020.3.23  
+1. 使用 OcQuirks 代替 AptioMemoryFix 修复 Clover 内存分配<br>Fix memory by [OcQuirks](https://github.com/ReddestDream/OcQuirks) insteads of AptioMemoryFix.
+2. 升级Clover到5106<br>Update Clover to version 5106.  
 ### 2020.2.9  
 1. 打上IRQ补丁以解决部分音频问题<br>Apply IRQ Fix in DSDT to fix some minor audio issues.
 2. 取消`-v`模式并缩短Clover等待时间<br>Cancel `-v` mode and reduce the wait time before OS booting.  
