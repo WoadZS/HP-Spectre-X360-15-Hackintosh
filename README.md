@@ -2,8 +2,8 @@
 EFI files for HP Spectre X360 15-bl112dx
 
 ## macOS版本 Version
-MacOS Catalina 10.15.3  
-Clover Version v5106
+MacOS Catalina 10.15.4  
+Clover Version v5107
 ## 配置 Specs
 |配置 Parts|参数 Details
 |:---:|:---:|
