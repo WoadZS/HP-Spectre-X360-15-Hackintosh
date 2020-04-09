@@ -18,6 +18,9 @@ CPU | i7-8550U
 BIOS | v.41（v.40 Tested）
 
 ## 更新历史 Changelog
+### 2020.4.9  
+1. 升级kexts，并重新开始使用VoodooI2CHID.kext，触摸屏已正常<br>Update kexts and use VoodooI2CHID.kext again, touchscreen now works as expected.
+2. 显卡注入`force-online`以修复唤醒后外接显示器黑屏<br>Apply `force-online` in devices property to fix black screen after wakeup.  
 ### 2020.3.23  
 1. 使用 OcQuirks 代替 AptioMemoryFix 修复 Clover 内存分配<br>Fix memory by [OcQuirks](https://github.com/ReddestDream/OcQuirks) insteads of AptioMemoryFix.
 2. 升级Clover到5106<br>Update Clover to version 5106.  
@@ -51,7 +54,7 @@ BIOS | v.41（v.40 Tested）
 * 触摸板 Trackpad  
 * 声卡 Audio  
 * 睡眠 Sleep 
-* ~~触摸屏 Touch Screen~~ 将VoodooI2CHID.kext放到LE里面就能启用，但会导致触摸板失效<br>You can put VoodooI2CHID.kext back in to LE to enable that, but you will lose touchpad
+* 触摸屏 Touch Screen 
 * FN 小太阳亮度调整<br>FN key support brightness adjust.
 
 ## 已知无法正常工作的部件和问题 Known Issues
