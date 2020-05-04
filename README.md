@@ -3,7 +3,7 @@ EFI files for HP Spectre X360 15-bl112dx
 
 ## macOS版本 Version
 MacOS Catalina 10.15.4  
-Clover Version v5109
+Clover Version v5115
 ## 配置 Specs
 |配置 Parts|参数 Details
 |:---:|:---:|
@@ -18,6 +18,9 @@ CPU | i7-8550U
 BIOS | v.41（v.40 Tested）
 
 ## 更新历史 Changelog
+### 2020.5.4  
+1. 升级kexts和Clover<br>Update kexts and Clover.
+2. 将放置在LE的Kext移动到Clover对应目录，因为部分新Kext在LE下会导致无法启动<br>Move the Kexts placed in LE to the corresponding directory of Clover, because some new Kexts will not start under LE.  
 ### 2020.4.9  
 1. 升级kexts，并重新开始使用VoodooI2CHID.kext，触摸屏已正常<br>Update kexts and use VoodooI2CHID.kext again, touchscreen now works as expected.
 2. 显卡注入`force-online`以修复唤醒后外接显示器黑屏<br>Apply `force-online` in devices property to fix black screen after wakeup.  
