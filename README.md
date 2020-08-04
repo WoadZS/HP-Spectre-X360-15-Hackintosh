@@ -2,8 +2,8 @@
 EFI files for HP Spectre X360 15-bl112dx
 
 ## macOS版本 Version
-MacOS Catalina 10.15.5  
-Clover Version v5118
+MacOS Catalina 10.15.6  
+Clover Version v5120
 ## 配置 Specs
 |配置 Parts|参数 Details
 |:---:|:---:|
@@ -18,6 +18,14 @@ CPU | i7-8550U
 BIOS | v.41（v.40 Tested）
 
 ## 更新历史 Changelog
+### 2020.8.4  
+1. 升级kexts和Clover<br>Update kexts and Clover.
+2. 放入itlwm.kext和相应Intel蓝牙驱动，以便于部分想要尝试Intel无线网卡的朋友操作，更多信息可以访问[OpenIntelWireless
+](https://github.com/OpenIntelWireless)，我个人不保证这些Kext可以真的起作用<br>Add itlwm.kext and Intel bluetooth injection kexts, for anyone who want have a try on Intel wireless card, please visit [OpenIntelWireless
+](https://github.com/OpenIntelWireless) for more information. I am not sure those kexts could work. 
+* IntelBluetoothFirmware.kext
+* IntelBluetoothInjector.kext
+* itlwm.kext
 ### 2020.5.4  
 1. 升级kexts和Clover<br>Update kexts and Clover.
 2. 将放置在LE的Kext移动到Clover对应目录，因为部分新Kext在LE下会导致无法启动<br>Move the Kexts placed in LE to the corresponding directory of Clover, because some new Kexts will not start under LE.  
